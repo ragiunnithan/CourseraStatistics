@@ -1,0 +1,99 @@
+---
+title: "Statistical Inference"
+author: "Ragi"
+date: "September 20, 2017"
+output: pdf_document
+---
+
+
+
+
+
+# Probability
+
+Given a random experiment(say rolling a die) probability measure is a population quantity that summarizes the randomness.
+
+Probability operates on a particular outcome from an experiment.
+
+## Rules probability must follow.
+
+The probability that nothing occurs is 0.
+The probability that something occurs is 1.
+The probability of something is 1 minus the probability that the opposite occurs.
+Foe eg: the probability og getting an even number when rolling a die is 1 - probabilty of getting an odd number.
+
+The probability of atleast one of two(or more) things that can not simultaneously occur(mutually exclusive) is the sum of their respective probabilities.
+
+
+## Densities and Mass function for random variables
+Random variable is a numerical outcome of an experiment. Random variables can be discrete or continuous.
+Discrete are those we can count like number of web hits, hair color(1 for black, 2 for blond)
+Continuous random variable can take any value in a continuom. The way we work with discrete random variable is we are going to assign a probability  to every value that they can take. They way we are going to work with continuous random variable is we are going to assign probabilities to ranges that they can take.
+
+
+## Examples for random variables:
+
+### Discreet Random Variables:
+       1. The outcome (0 or 1) of the flip of a coin
+       2. The outcome from the roll of a die
+       3. The website traffic on a given day.
+       4. The BMI of a subject four years after a baseline measurement.
+       
+       
+## Continuous Random variables:
+       1. Intelligent quotients for a sample of children
+       
+       
+## Probability Mass Function:
+A probability mass function evaluated at a value corresponds to the probability that a random variable takes that value. To be a valid pmf a funtion , p,  must satisy
+
+1. It must always be larger than or equal to 0.
+
+2. The sum of the possible values that the random variable can take has to add up to one. for eg , when rolling a die , p(1)+p(2)+p(3)+....+p(6)=1
+
+
+Example:
+X=0 represents tails and X=1 represents heads.
+$$ p(x) = (1/2)^{x}(1/2)^{1-x }$$       for x =0,1 
+
+if we plug x=0 we get 1/2 and we plug in x=1 we get 1/2. This is possible for a fair coin. 
+
+But for unfair coin
+
+$$ p(x) = \theta^{x}(1-\theta)^{1-x }$$       for x =0,1 
+
+
+
+
+
+
+
+## Probability Density Function
+Probability density function (pdf), is a function associated with a continuous random variable.
+
+To be a valid pdf, a function must satisfy
+1. It must be larger than or equal to zero everywhere.
+2. The total area under it must be one.
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+
